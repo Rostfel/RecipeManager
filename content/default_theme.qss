@@ -1,0 +1,347 @@
+/* BASE STYLES */
+QMainWindow {
+    background-color: #ECECEC;
+}
+
+* {
+    outline: 0;
+}
+QWidget {
+    font: 10pt "Segoe UI";
+    color: #000000;
+    background-color: #ECECEC;
+    border: none;
+}
+
+/* RECIPE PAGE */
+QLineEdit#recipe_name {
+    font-size: 16px;
+}
+
+QTextEdit#recipe_text {
+    font-size: 16px;
+}
+
+/* BUTTON STYLES */
+QPushButton {
+    background-color: #007BFF;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 100px;
+    min-height: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton:hover {
+    background-color: #0056b3;
+}
+QPushButton:pressed {
+    background-color: #004494;
+}
+
+/* SPECIAL BUTTONS */
+QPushButton#add_recipe_button {
+    background-color: #FC5203;
+    min-width: 200px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#add_recipe_button:hover {
+    background-color: #D1372A;
+}
+QPushButton#add_recipe_button:pressed {
+    background-color: #B72F24;
+}
+QPushButton#delete_button {
+    background-color: #E70012;
+    min-width: 200px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#delete_button:hover {
+    background-color: #C5000B;
+}
+QPushButton#delete_button:pressed {
+    background-color: #A30008;
+}
+QPushButton#order_button {
+    background-color: #08B4C0;
+    min-width: 200px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#order_button:hover {
+    background-color: #07939E;
+}
+QPushButton#order_button:pressed {
+    background-color: #06727B;
+}
+QPushButton#save_button {
+    background-color: #50B80B;
+    min-width: 120px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#save_button:hover {
+    background-color: #409609;
+}
+QPushButton#save_button:pressed {
+    background-color: #307407;
+}
+QPushButton#extract_button {
+    background-color: #3571EA;
+    min-width: 150px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#extract_button:hover {
+    background-color: #2A5BBD;
+}
+QPushButton#extract_button:pressed {
+    background-color: #1F4493;
+}
+
+/* ingredients buttons */
+QPushButton#add_ingredient_btn,
+QPushButton#edit_ingredient_btn,
+QPushButton#remove_ingredient_btn {
+    background-color: #82828A;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#add_ingredient_btn:hover,
+QPushButton#edit_ingredient_btn:hover,
+QPushButton#remove_ingredient_btn:hover {
+    background-color: #66666A;
+}
+QPushButton#add_ingredient_btn:pressed,
+QPushButton#edit_ingredient_btn:pressed,
+QPushButton#remove_ingredient_btn:pressed {
+    background-color: #55555A;
+}
+
+/* ORDERING BUTTON */
+QPushButton#ordering_button {
+    background-color: #FF6B00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 160px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QPushButton#ordering_button:hover {
+    background-color: #E05D00;
+}
+QPushButton#ordering_button:pressed {
+    background-color: #C25000;
+}
+QPushButton#ordering_button:disabled {
+    background-color: #AAAAAA;
+    color: #777777;
+}
+
+
+/* PANEL BACKGROUNDS */
+#middle_panel {
+    background-color: #F9F9F9;
+    border-radius: 4px;
+}
+#right_panel {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+#text_container, #name_label, #id_label {
+    background-color: #FFFFFF;
+}
+
+/* INPUT FIELDS */
+QLineEdit, QTextEdit {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 6px;
+    background: #FFFFFF;
+}
+
+/* RECIPE LIST (LEFT PANEL) */
+QListWidget {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+QListWidget::item {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 8px;
+}
+QListWidget::item:selected {
+    border: 3px solid #3E9AFF !important;
+}
+
+/* INGREDIENTS TABLE (RIGHT PANEL) - MODIFIED FOR BOTTOM BORDERS ONLY */
+QTableWidget#ingredients_table {
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-size: 14px;
+    font-style: italic;
+    border: 1px solid #CCCCCC;
+}
+QTableWidget#ingredients_table QTableCornerButton::section {
+    background-color: #FFFFFF;
+    border: none;
+}
+QTableWidget#ingredients_table::item {
+    padding: 6px;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+QTableWidget#ingredients_table::item:selected {
+    background-color: #F6B162;
+    color: #000000;
+}
+QHeaderView::section {
+    background-color: #FFFFFF;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 14px;
+    font-weight: normal;
+}
+QHeaderView::section:vertical {
+    font-weight: normal;
+    background-color: #FFFFFF;
+    border: none;
+}
+QAbstractScrollArea QWidget {
+    background-color: #FFFFFF !important;
+}
+
+/* SCROLLBARS */
+QScrollBar:vertical {
+    border: none;
+    background: #F1F1F1;
+    width: 12px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #AAAAAA;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* STATUS BAR */
+QStatusBar {
+    background: #F8F9FA;
+    color: #000000;
+    border-top: 1px solid #CCCCCC;
+    padding: 4px;
+}
+
+/* LABELS */
+QLabel {
+    font-size: 18px;
+    color: #000000;
+}
+#name_label {
+    font-size: 14px;
+    font-weight: bold;
+}
+#id_label {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* FORCE NO FOCUS INDICATORS */
+QListWidget::item:focus,
+QListView::item:focus,
+#ingredients_table::item:focus {
+    outline: none;
+}
+
+/* MessageBox */
+QMessageBox QLabel {
+    font-size: 14px;
+}
+QMessageBox QPushButton {
+    background-color: #DB9421;
+    min-width: 60px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QMessageBox QPushButton:hover {
+    background-color: #A8721B;
+}
+QMessageBox QPushButton:pressed {
+    background-color: #754E0F;
+}
+
+QInputDialog QLabel {
+    font-size: 14px;
+}
+QInputDialog QPushButton {
+    background-color: #DB9421;
+    min-width: 60px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+QInputDialog QPushButton:hover {
+    background-color: #A8721B;
+}
+QInputDialog QPushButton:pressed {
+    background-color: #754E0F;
+}
+
+/* CONTEXT MENU STYLES */
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+}
+QMenu::item {
+    padding: 5px 25px 5px 20px;
+}
+QMenu::item:selected {
+    background-color: #F6B162;
+    color: #000000;
+}
+
+/* CATEGORY TAGS */
+QWidget#categories_widget {
+    background-color: #FFFFFF;
+}
+QFrame#category_tag {
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    padding: 2px 6px;
+    margin: 2px;
+}
+QLabel#category_label {
+    background-color: #DDDDDD;
+    font-size: 12px;
+    color: #000000;
+}
+
+/* SCROLL AREA STYLES */
+QScrollArea {
+    border: none;
+}
+QScrollBar:horizontal {
+    background: #FFFFFF;
+    height: 6px;
+    margin: 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #E0E0E0;
+    min-width: 20px;
+    border-radius: 4px;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
